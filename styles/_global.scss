@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: $main-transition;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+::selection {
+    background: #0043ffa1;
+    color: $light-text-color;
+}
+
+body {
+    font-family: $primary-font;
+    background-color: $light-bg;
+    color: $dark-text-color;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.7em;
+    letter-spacing: 0em;
+}
+
+section {
+    padding: 5rem 0 3.1rem;
+}
+
+// Texts -------------------------------------------------------------------------------------------
+
+h1.main-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    text-indent: -9999em;
+}
