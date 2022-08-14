@@ -37,3 +37,12 @@ h1.main-title {
     display: inline-block;
     text-indent: -9999em;
 }
+
+a {
+    text-decoration: none;
+    color: $dark-text-color;
+
+    &:hover {
+        color: $primary-color;
+    }
+}

@@ -1,0 +1,29 @@
+.top-header {
+    border-bottom: 1px solid $border-color;
+
+    .social,
+    .contact-info {
+        justify-content: flex-start;
+        align-items: center;
+        gap: 1rem;
+        border-left: 1px solid $border-color;
+    }
+
+    .social a {
+        display: inline-block;
+        padding: 0.5rem 0.8rem;
+
+        &:hover {
+            background-color: $primary-color-darken-50;
+            color: $light-text-color;
+        }
+    }
+
+    .contact-info {
+        padding: 0.5rem 0.8rem;
+
+        i {
+            color: $primary-color-darken-100;
+        }
+    }
+}
