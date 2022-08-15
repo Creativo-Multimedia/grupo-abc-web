@@ -1,0 +1,26 @@
+.image-slider {
+    .carousel {
+        .carousel-indicators {
+            opacity: 0;
+
+            &:hover {
+                opacity: 1;
+            }
+
+            button {
+                width: 1.1rem;
+                height: 1rem;
+            }
+        }
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        opacity: 0;
+
+        &:hover {
+            opacity: 1;
+            background: #ffffff14;
+        }
+    }
+}
