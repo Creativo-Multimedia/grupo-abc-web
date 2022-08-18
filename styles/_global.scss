@@ -64,8 +64,6 @@ h4 {
     font-weight: 500;
 }
 
-
-
 a {
     text-decoration: none;
     color: $dark-text-color;
@@ -79,4 +77,11 @@ a {
 
 .overflow-h {
     overflow: hidden;
+}
+
+// Override Bootstrap accordion styles -------------------------------------------------------------------------------------------
+
+.accordion-button:not(.collapsed)::after,
+.accordion-button::after {
+    background-image: none;
 }

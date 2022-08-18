@@ -1,0 +1,21 @@
+.why-us {
+    background-color: $light-bg-darken-50;
+
+    .accordion {
+        .accordion-item {
+            .accordion-header {
+                button {
+                    color: $dark-text-color  !important;
+
+                    i {
+                        margin-right: 1rem;
+                    }
+
+                    &:focus {
+                        box-shadow: none;
+                    }
+                }
+            }
+        }
+    }
+}
