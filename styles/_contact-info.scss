@@ -1,0 +1,14 @@
+.contact-info {
+    .content-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+
+        i {
+            font-size: 3rem;
+            color: $primary-color-darken-50;
+        }
+    }
+}
