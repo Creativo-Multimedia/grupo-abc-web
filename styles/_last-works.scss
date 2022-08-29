@@ -25,10 +25,6 @@
                 background-color: #ffffffed;
                 opacity: 0;
 
-                &:hover {
-                    opacity: 1;
-                }
-
                 i {
                     background: $dark-text-color-darken;
                     border-radius: 50%;
@@ -60,6 +56,14 @@
     .last-works {
         .last-works-wrapper {
             columns: 3;
+
+            .item {
+                .hidden-content {
+                    &:hover {
+                        opacity: 1;
+                    }
+                }
+            }
         }
     }
 }

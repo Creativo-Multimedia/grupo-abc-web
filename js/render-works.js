@@ -48,11 +48,21 @@ const marketingWorks = [
 ]
 
 const d = document,
+    ua = navigator.userAgent,
     $container = d.querySelector('.last-works-wrapper'),
     $fragment = d.createDocumentFragment(),
     $imgModal = d.getElementById('image-modal'),
     $imgModalWrapper = d.getElementById('image-wrapper'),
     $closeIcon = d.querySelector('.close-icon')
+
+const isMobile = {
+    android: () => ua.match(/android/i),
+    ios: () => ua.match(/iphone|ipad|ipod/i),
+    windows: () => ua.match(/windows phone/i),
+    any: function () {
+        return this.android() || this.ios() || this.windows()
+    }
+}
 
 const renderWorks = (page) => {
     if (page === 'eventos') {
@@ -97,10 +107,13 @@ const handleClick = (e) => {
     $modalImg.setAttribute('src', e.target.getAttribute('clickedImg'))
     $modalImg.classList.add('modal-img')
     $imgModalWrapper.appendChild($modalImg)
-    d.body.classList.add('overflow-h') 
+    d.body.classList.add('overflow-h')
 }
 
-d.addEventListener('click', e => handleClick(e))
+d.addEventListener('click', e => {
+    if (isMobile.any()) return
+    handleClick(e)
+})
 
 $closeIcon.addEventListener('click', () => {
     $imgModal.classList.add('d-none')
