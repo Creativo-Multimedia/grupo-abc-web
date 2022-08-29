@@ -2,4 +2,8 @@ footer {
     background-color: $dark-bg-darken;
     color: $light-text-color;
     padding: 1rem 0;
+
+    p {
+        max-width: 80%;
+    }
 }
